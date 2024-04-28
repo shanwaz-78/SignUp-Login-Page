@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register Here</title>
+    <title>Login Form</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       rel="stylesheet"
@@ -13,36 +13,29 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/login.css" />
   </head>
-
   <body>
     <div class="background">
       <div class="shape"></div>
       <div class="shape"></div>
     </div>
-    <form id="form">
-      <h3>Sign Up</h3>
 
-      <label for="username">Username</label>
-      <input
-        type="text"
-        placeholder="Enter Name"
-        id="username"
-        name="name"
-        required
-      />
+    <form id="login-form">
+      <h3>Login Here</h3>
 
       <label for="email">Email</label>
       <input
         type="email"
-        placeholder="Email"
+        placeholder="Enter Email"
         id="email"
         name="email"
+        autocomplete="off"
         required
       />
+      <div id="username-error" class="error-message"></div>
 
-      <label for="password"> Password</label>
+      <label for="password">Password</label>
       <input
         type="password"
         placeholder="Password"
@@ -51,12 +44,9 @@
         autocomplete="on"
         required
       />
-
-      <a href="./html/login.html">
-        <p>Sign In</p>
-      </a>
-      <button class="button">Sign Up</button>
+      <button type="submit" id="login-button">Log In</button>
+      <a href="../index.html">Sign Up</a>
     </form>
-    <script src="./js/index.js"></script>
+    <script src="../js/login.js"></script>
   </body>
 </html>
